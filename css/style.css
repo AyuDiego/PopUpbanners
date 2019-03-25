@@ -1,0 +1,147 @@
+@charset "utf-8";
+body { 
+	font-family: arial, monospace; 
+	line-height: 1.3; 
+	color: #335500; 
+	/*#335500 dark green font color*/
+	font-size: small; 
+	margin: 20px; 	
+	background-color: #e9e9e2; 
+}  
+
+
+a { 
+	color: #335500; 
+	background-color: #e9e9e2; 
+}
+
+a:link, a:visited, a:hover, a:active { 
+	background-color: #e9e9e2;   
+}
+
+.link a:link, .link a:visited, .link a:hover, .link a:active { 
+	background-color: #e9e9e2; 
+}
+
+ 
+div { 
+	display:inline-table;
+	padding: 3px; 
+	 
+}
+ 
+.banner1 {
+  
+  max-width: 250px;
+  max-width: 250px ;
+}
+
+.ajustarTamañoLink{
+	width: 250px;
+	width: 250px ;
+}
+
+/* contenedor pop up
+ */
+  #contenedor-del-popover {
+	position:fixed;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.5);
+  }
+  
+  #popover {
+	/* CENTRAMOS HORIZONTAL Y VERTICALMENTE EL POPOVER */
+	position:absolute;
+	width:400px;
+	height:250px;
+	left:50%;
+	margin-left:-200px;
+	top:50%;
+	margin-top:-125px;
+	background-color:white;
+  }
+ 
+.clickBanner{
+	width: 73px;
+    height: 50px;
+}
+
+.overlay {
+    position: fixed;
+	top: 109px;
+    bottom: 0;
+	left: 25%;
+    right: 0;
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay2 {
+    position: fixed;
+	top: 109px;
+	left: 40%;
+    bottom: 0;
+    right: 0;
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay3 {
+    position: fixed;
+	top: 86px;
+    bottom: 0;
+	left: 58%;
+    right: 0;
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay2:target {
+    visibility: visible;
+    opacity: 1;
+}
+.overlay3:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+#popupBody{
+    width: 46%;
+    margin: 4%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(204, 204, 204, 0.705);
+    background: rgba(255, 255, 255, 0.685);
+    position: relative;
+    transition: all 5s ease-in-out;
+    margin: 20% auto;    
+}
+
+#cerrar{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+	color: #F00;
+ 	background-color: transparent;
+      
+}
+#link{
+	position: absolute;
+	max-width: 5% !important;
+	top: 190px;
+    right: 81px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+	color: #F00;
+	
+}
